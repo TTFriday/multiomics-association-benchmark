@@ -1,0 +1,108 @@
+{
+  "model": "hgt",
+  "seed": 102,
+  "dev_seed": null,
+  "lr": 0.001,
+  "wd": 0.0,
+  "epochs": 150,
+  "hidden": 64,
+  "layers": 2,
+  "dropout": 0.2,
+  "device": "cuda",
+  "best_epoch": 150,
+  "best_val_macro_NDCG@50": 0.07097634325492286,
+  "training_seconds": 84.06718020001426,
+  "validation_history": [
+    {
+      "epoch": 25,
+      "macro_NDCG@50": 0.006123491372006469
+    },
+    {
+      "epoch": 50,
+      "macro_NDCG@50": 0.005401656850155377
+    },
+    {
+      "epoch": 75,
+      "macro_NDCG@50": 0.016212033795895288
+    },
+    {
+      "epoch": 100,
+      "macro_NDCG@50": 0.030109977176348578
+    },
+    {
+      "epoch": 125,
+      "macro_NDCG@50": 0.05951244724419377
+    },
+    {
+      "epoch": 150,
+      "macro_NDCG@50": 0.07097634325492286
+    }
+  ],
+  "val": {
+    "pair_MRR": 0.005303776356352374,
+    "macro_MRR_first": 0.09788996262537707,
+    "n_test_phenotypes": 114,
+    "n_test_pairs": 6267,
+    "tie_rate": 0.00027429435324761525,
+    "tie_sensitivity_seed50": null,
+    "n_head_phenotypes": 79,
+    "n_tail_phenotypes": 35,
+    "pair_Hits@10": 0.0070209031434498165,
+    "macro_Recall@10": 0.021292832256730763,
+    "macro_NDCG@10": 0.0431816098679224,
+    "head_macro_NDCG@10": 0.05831947655895475,
+    "tail_macro_NDCG@10": 0.009013282193877965,
+    "pair_Hits@50": 0.03765757140577629,
+    "macro_Recall@50": 0.10088589723393061,
+    "macro_NDCG@50": 0.07097634325492286,
+    "head_macro_NDCG@50": 0.09006013079380128,
+    "tail_macro_NDCG@50": 0.027901508524311534
+  },
+  "test": {
+    "pair_MRR": 0.007601506239219903,
+    "macro_MRR_first": 0.11031253286489881,
+    "n_test_phenotypes": 112,
+    "n_test_pairs": 6269,
+    "tie_rate": 0.0002883348098514684,
+    "tie_sensitivity_seed50": null,
+    "n_head_phenotypes": 79,
+    "n_tail_phenotypes": 33,
+    "pair_Hits@10": 0.010368479821343117,
+    "macro_Recall@10": 0.027001461829180427,
+    "macro_NDCG@10": 0.06385126764754005,
+    "head_macro_NDCG@10": 0.08074676235380378,
+    "tail_macro_NDCG@10": 0.023404477290120816,
+    "pair_Hits@50": 0.060615728186313604,
+    "macro_Recall@50": 0.12878032521107216,
+    "macro_NDCG@50": 0.10242130357741612,
+    "head_macro_NDCG@50": 0.12572159984888226,
+    "tail_macro_NDCG@50": 0.04664180644269424
+  },
+  "val_binary": {
+    "macro_AUROC": 0.8658375046096745,
+    "macro_AUPRC": 0.641562977204599,
+    "n_phenotypes": 114,
+    "n_pairs": 68937
+  },
+  "test_binary": {
+    "macro_AUROC": 0.872524392459443,
+    "macro_AUPRC": 0.6616418933085303,
+    "n_phenotypes": 112,
+    "n_pairs": 68959
+  },
+  "frequency": {
+    "head": {
+      "n_phenotypes": 79,
+      "n_test_positives": 6213,
+      "n_test_negatives": 62148,
+      "prevalence": 0.09088515381577215
+    },
+    "tail": {
+      "n_phenotypes": 33,
+      "n_test_positives": 56,
+      "n_test_negatives": 542,
+      "prevalence": 0.09364548494983277
+    }
+  },
+  "logits_sha256": "4a3c7fb2825cd08d7c3d499f8debf22f56e3c56b133e98fed5c583de8484cbd5"
+}

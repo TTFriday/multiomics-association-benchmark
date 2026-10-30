@@ -1,0 +1,76 @@
+{
+  "model": "mlp",
+  "seed": 91,
+  "dev_seed": 91,
+  "lr": 0.001,
+  "wd": 0.0,
+  "epochs": 3,
+  "hidden": 64,
+  "layers": 2,
+  "dropout": 0.2,
+  "device": "cuda",
+  "best_epoch": 3,
+  "best_val_macro_NDCG@50": 0.005933672075473503,
+  "training_seconds": 0.7447656999574974,
+  "validation_history": [
+    {
+      "epoch": 3,
+      "macro_NDCG@50": 0.005933672075473503
+    }
+  ],
+  "val": {
+    "pair_MRR": 0.0008894440452868082,
+    "macro_MRR_first": 0.022008206655044677,
+    "n_test_phenotypes": 106,
+    "n_test_pairs": 6267,
+    "tie_rate": 0.00019023645840369555,
+    "tie_sensitivity_seed50": null,
+    "pair_Hits@10": 0.0007978299026647519,
+    "macro_Recall@10": 0.00039502554999150185,
+    "macro_NDCG@10": 0.005610923322401496,
+    "pair_Hits@50": 0.00430828147438966,
+    "macro_Recall@50": 0.0014293335616505827,
+    "macro_NDCG@50": 0.005933672075473503
+  },
+  "test": {
+    "pair_MRR": 0.0009694502864205154,
+    "macro_MRR_first": 0.0217578497727869,
+    "n_test_phenotypes": 108,
+    "n_test_pairs": 6269,
+    "tie_rate": 0.00018806824526450036,
+    "tie_sensitivity_seed50": null,
+    "pair_Hits@10": 0.001276120593396076,
+    "macro_Recall@10": 0.0011557212652899334,
+    "macro_NDCG@10": 0.007613053128822922,
+    "pair_Hits@50": 0.004625937151060775,
+    "macro_Recall@50": 0.001563437282555852,
+    "macro_NDCG@50": 0.006528775038168579
+  },
+  "val_binary": {
+    "macro_AUROC": 0.5334517349055703,
+    "macro_AUPRC": 0.19150735662919163,
+    "n_phenotypes": 106,
+    "n_pairs": 68937
+  },
+  "test_binary": {
+    "macro_AUROC": 0.5379810300277957,
+    "macro_AUPRC": 0.18248977644191952,
+    "n_phenotypes": 108,
+    "n_pairs": 68959
+  },
+  "frequency": {
+    "head": {
+      "n_phenotypes": 79,
+      "n_test_positives": 6217,
+      "n_test_negatives": 62159,
+      "prevalence": 0.09092371592371593
+    },
+    "tail": {
+      "n_phenotypes": 29,
+      "n_test_positives": 52,
+      "n_test_negatives": 531,
+      "prevalence": 0.08919382504288165
+    }
+  },
+  "logits_sha256": "a7ba4eb95be2e822a620987c6eda30fd88a16d10557e4654a4901f9a7e88d81f"
+}

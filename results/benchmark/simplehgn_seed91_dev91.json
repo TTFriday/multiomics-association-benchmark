@@ -1,0 +1,76 @@
+{
+  "model": "simplehgn",
+  "seed": 91,
+  "dev_seed": 91,
+  "lr": 0.001,
+  "wd": 0.0,
+  "epochs": 3,
+  "hidden": 64,
+  "layers": 2,
+  "dropout": 0.2,
+  "device": "cuda",
+  "best_epoch": 3,
+  "best_val_macro_NDCG@50": 0.0023755502639944926,
+  "training_seconds": 1.5123560999054462,
+  "validation_history": [
+    {
+      "epoch": 3,
+      "macro_NDCG@50": 0.0023755502639944926
+    }
+  ],
+  "val": {
+    "pair_MRR": 0.0004031693661571851,
+    "macro_MRR_first": 0.006996260327820759,
+    "n_test_phenotypes": 106,
+    "n_test_pairs": 6267,
+    "tie_rate": 0.00033636011485870806,
+    "tie_sensitivity_seed50": null,
+    "pair_Hits@10": 0.0004786979415988511,
+    "macro_Recall@10": 0.0019053891638768547,
+    "macro_NDCG@10": 0.0021501348819311116,
+    "pair_Hits@50": 0.0014360938247965534,
+    "macro_Recall@50": 0.0024996150930096206,
+    "macro_NDCG@50": 0.0023755502639944926
+  },
+  "test": {
+    "pair_MRR": 0.0004936638170194966,
+    "macro_MRR_first": 0.008146174663727971,
+    "n_test_phenotypes": 108,
+    "n_test_pairs": 6269,
+    "tie_rate": 0.0003399695202858276,
+    "tie_sensitivity_seed50": null,
+    "pair_Hits@10": 0.000319030148349019,
+    "macro_Recall@10": 4.7914094305846886e-05,
+    "macro_NDCG@10": 0.0014518197959013952,
+    "pair_Hits@50": 0.002233211038443133,
+    "macro_Recall@50": 0.00032583374204919583,
+    "macro_NDCG@50": 0.0024276788040651235
+  },
+  "val_binary": {
+    "macro_AUROC": 0.50673678530379,
+    "macro_AUPRC": 0.18012563425054623,
+    "n_phenotypes": 106,
+    "n_pairs": 68937
+  },
+  "test_binary": {
+    "macro_AUROC": 0.49309224919891337,
+    "macro_AUPRC": 0.17539915454929556,
+    "n_phenotypes": 108,
+    "n_pairs": 68959
+  },
+  "frequency": {
+    "head": {
+      "n_phenotypes": 79,
+      "n_test_positives": 6217,
+      "n_test_negatives": 62159,
+      "prevalence": 0.09092371592371593
+    },
+    "tail": {
+      "n_phenotypes": 29,
+      "n_test_positives": 52,
+      "n_test_negatives": 531,
+      "prevalence": 0.08919382504288165
+    }
+  },
+  "logits_sha256": "750afe4e2501ae9ddd0dbccb0577be9a99946c9eb0db3092be2e2990d334605c"
+}
