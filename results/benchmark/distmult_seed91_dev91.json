@@ -1,0 +1,76 @@
+{
+  "model": "distmult",
+  "seed": 91,
+  "dev_seed": 91,
+  "lr": 0.001,
+  "wd": 0.0,
+  "epochs": 3,
+  "hidden": 64,
+  "layers": 2,
+  "dropout": 0.2,
+  "device": "cuda",
+  "best_epoch": 3,
+  "best_val_macro_NDCG@50": 0.010158352302058887,
+  "training_seconds": 0.7282761000096798,
+  "validation_history": [
+    {
+      "epoch": 3,
+      "macro_NDCG@50": 0.010158352302058887
+    }
+  ],
+  "val": {
+    "pair_MRR": 0.001270312953871037,
+    "macro_MRR_first": 0.020632699902076817,
+    "n_test_phenotypes": 106,
+    "n_test_pairs": 6267,
+    "tie_rate": 0.00015071873999133366,
+    "tie_sensitivity_seed50": null,
+    "pair_Hits@10": 0.0009573958831977022,
+    "macro_Recall@10": 5.5231590858439195e-05,
+    "macro_NDCG@10": 0.006747035837605998,
+    "pair_Hits@50": 0.007978299026647519,
+    "macro_Recall@50": 0.003422702442687175,
+    "macro_NDCG@50": 0.010158352302058887
+  },
+  "test": {
+    "pair_MRR": 0.0014639411941463282,
+    "macro_MRR_first": 0.02001011359416828,
+    "n_test_phenotypes": 108,
+    "n_test_pairs": 6269,
+    "tie_rate": 0.00014873666512504955,
+    "tie_sensitivity_seed50": null,
+    "pair_Hits@10": 0.0020736959642686232,
+    "macro_Recall@10": 0.00014949074298480016,
+    "macro_NDCG@10": 0.010889783972417293,
+    "pair_Hits@50": 0.010527994895517626,
+    "macro_Recall@50": 0.0013253891610818926,
+    "macro_NDCG@50": 0.012042298325171678
+  },
+  "val_binary": {
+    "macro_AUROC": 0.4982192540628268,
+    "macro_AUPRC": 0.15561990735282452,
+    "n_phenotypes": 106,
+    "n_pairs": 68937
+  },
+  "test_binary": {
+    "macro_AUROC": 0.5202485348899777,
+    "macro_AUPRC": 0.1719852549691755,
+    "n_phenotypes": 108,
+    "n_pairs": 68959
+  },
+  "frequency": {
+    "head": {
+      "n_phenotypes": 79,
+      "n_test_positives": 6217,
+      "n_test_negatives": 62159,
+      "prevalence": 0.09092371592371593
+    },
+    "tail": {
+      "n_phenotypes": 29,
+      "n_test_positives": 52,
+      "n_test_negatives": 531,
+      "prevalence": 0.08919382504288165
+    }
+  },
+  "logits_sha256": "d70a3c75adf8702258acb726150484d5e4aac878339d6e1b1e4826c922cfdaa5"
+}

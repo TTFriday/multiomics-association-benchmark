@@ -1,0 +1,96 @@
+{
+  "model": "distmult",
+  "seed": 92,
+  "dev_seed": 92,
+  "lr": 0.005,
+  "wd": 0.0005,
+  "epochs": 150,
+  "hidden": 64,
+  "layers": 2,
+  "dropout": 0.2,
+  "device": "cuda",
+  "best_epoch": 125,
+  "best_val_macro_NDCG@50": 0.0063626801585076114,
+  "training_seconds": 2.9343263000482693,
+  "validation_history": [
+    {
+      "epoch": 25,
+      "macro_NDCG@50": 0.004540692355153529
+    },
+    {
+      "epoch": 50,
+      "macro_NDCG@50": 0.003421649181170565
+    },
+    {
+      "epoch": 75,
+      "macro_NDCG@50": 0.003978016933248127
+    },
+    {
+      "epoch": 100,
+      "macro_NDCG@50": 0.0063169511079002325
+    },
+    {
+      "epoch": 125,
+      "macro_NDCG@50": 0.0063626801585076114
+    },
+    {
+      "epoch": 150,
+      "macro_NDCG@50": 0.005566553224467604
+    }
+  ],
+  "val": {
+    "pair_MRR": 0.0009271435029713551,
+    "macro_MRR_first": 0.018894638332721772,
+    "n_test_phenotypes": 107,
+    "n_test_pairs": 6267,
+    "tie_rate": 0.00015747157092000716,
+    "tie_sensitivity_seed50": null,
+    "pair_Hits@10": 0.0009573958831977022,
+    "macro_Recall@10": 7.995538251008497e-05,
+    "macro_NDCG@10": 0.005885320854585124,
+    "pair_Hits@50": 0.005265677357587362,
+    "macro_Recall@50": 0.00045503186213132765,
+    "macro_NDCG@50": 0.0063626801585076114
+  },
+  "test": {
+    "pair_MRR": 0.0007662283671038623,
+    "macro_MRR_first": 0.013847652272998796,
+    "n_test_phenotypes": 102,
+    "n_test_pairs": 6269,
+    "tie_rate": 0.00016011466894854038,
+    "tie_sensitivity_seed50": null,
+    "pair_Hits@10": 0.0007975753708725474,
+    "macro_Recall@10": 0.0005026627653331113,
+    "macro_NDCG@10": 0.00413818588598844,
+    "pair_Hits@50": 0.004785452225235284,
+    "macro_Recall@50": 0.001970809493869856,
+    "macro_NDCG@50": 0.0058630306067980606
+  },
+  "val_binary": {
+    "macro_AUROC": 0.5299698108363935,
+    "macro_AUPRC": 0.19161463201583095,
+    "n_phenotypes": 107,
+    "n_pairs": 68937
+  },
+  "test_binary": {
+    "macro_AUROC": 0.47938521202749673,
+    "macro_AUPRC": 0.1402151198391673,
+    "n_phenotypes": 102,
+    "n_pairs": 68959
+  },
+  "frequency": {
+    "head": {
+      "n_phenotypes": 79,
+      "n_test_positives": 6233,
+      "n_test_negatives": 62316,
+      "prevalence": 0.09092765758800274
+    },
+    "tail": {
+      "n_phenotypes": 23,
+      "n_test_positives": 36,
+      "n_test_negatives": 374,
+      "prevalence": 0.08780487804878048
+    }
+  },
+  "logits_sha256": "e4cbba2b08ac284f884b8cffe79d3d38c6aad241ef7e94aa9c42be501218225c"
+}
